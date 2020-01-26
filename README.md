@@ -11,7 +11,7 @@
   </p>
   <p>
     <a href="https://github.com/Git-Curve/CPPReflection/blob/master/LICENSE">
-      <img src="https://img.shields.io/github/license/Git-Curve/CPPReflection.svg?style=flat-square" alt="License" />
+      <img src="https://img.shields.io/github/license/Git-Curve/CPPReflection.svg" alt="License" />
     </a>
   </p>
 </div>
