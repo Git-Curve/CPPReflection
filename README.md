@@ -10,7 +10,7 @@
     <h4>A simple cpp-reflection library.</h4>
   </p>
   <p>
-    <a href="https://github.com/CPPReflection/EasyBonsai2/blob/master/LICENSE">
+    <a href="https://github.com/CPPReflection/CPPReflection/blob/master/LICENSE">
       <img src="https://img.shields.io/github/license/Git-Curve/CPPReflection.svg?style=flat-square" alt="License" />
     </a>
   </p>
