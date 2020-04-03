@@ -157,11 +157,7 @@ namespace reflectpp
 		}
 		const bool fromJson(const json& from) noexcept
 		{
-			if (from["className"].is_string())
-			{
-				this->className = from["className"].get<std::string>();
-			}
-			else
+			if (!(from["className"].is_string() && (std::string)this->className == from["className"].get<std::string>()))
 			{
 				return false;
 			}
