@@ -181,7 +181,8 @@ namespace reflectpp
 #define REFLECTABLE reflectpp::ReflectionClass reflectpp{typeid(this).name(), {
 #ifdef REFLECTPP_JSON
 #define REFMEMBERJ(clazz, type, member) reflectpp::ReflectionMember{#member, typeid(member).raw_name(), &member, offsetof(clazz, clazz::member), [](reflectpp::ReflectionMember& member, json& result) {result = member.get<type>(); }, [](reflectpp::ReflectionMember& member, const json& from) { if (member.is<type>(from)) { member.set(from.get<type>()); return true; }  return false; } },
+#else
+#define REFMEMBER(clazz, member) reflectpp::ReflectionMember{#member, typeid(member).raw_name(), &member, offsetof(clazz, clazz::member)},
 #endif
-#define REFMEMBER(clazz, member) reflectpp::ReflectionMember{#member, &member, offsetof(clazz, clazz::member), typeid(member).raw_name()},
 #define REFLECTABLEEND }};
 #endif
